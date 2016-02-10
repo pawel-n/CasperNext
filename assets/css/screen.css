@@ -338,13 +338,18 @@ code, tt {
     padding: 1px 3px;
     font-family: Inconsolata, monospace, sans-serif;
     font-size: 0.85em;
-    white-space: pre-wrap;
     border: #E3EDF3 1px solid;
     background: #F7FAFB;
     border-radius: 2px;
     -webkit-font-feature-settings: "liga" 0;
     -moz-font-feature-settings: "liga" 0;
     font-feature-settings: "liga" 0;
+
+    white-space: pre-wrap;       /* CSS 3 */
+    white-space: -moz-pre-wrap;  /* Mozilla */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* IE 5.5+ */
 }
 
 pre {
